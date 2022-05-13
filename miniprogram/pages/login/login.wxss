@@ -1,0 +1,25 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.avatar {
+  display: block;
+  width: 270rpx;
+  height: 270rpx;
+  border: 12rpx solid #34B2BE;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content {
+  margin-top: 100rpx;
+}
+
+.login-btn {
+  margin-top: 100rpx;
+}

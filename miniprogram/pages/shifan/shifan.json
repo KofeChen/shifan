@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
+  }
+}

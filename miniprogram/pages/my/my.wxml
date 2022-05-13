@@ -1,0 +1,7 @@
+<view class="my-container">
+  <view class="userInfo">
+    <open-data class="avatar" type="userAvatarUrl"></open-data> 
+    <text class="userName">{{ userName }}</text>
+  </view>
+  
+</view>

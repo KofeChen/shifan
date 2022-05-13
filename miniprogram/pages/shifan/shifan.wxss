@@ -1,0 +1,63 @@
+.shifan-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.calendar {
+  --calendar-height: 400px;
+}
+
+.check-container { 
+  padding-top: 10px;
+  background-color: #fff;
+  border-top: .5px solid #ccc;
+  border-bottom: .5px solid #ccc;
+}
+
+.check-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.van-checkbox__label {
+  font-size: 18px;
+}
+
+/* 取消 van-cell 虚隐的底边框 */
+.van-cell:after {
+  border-bottom: none!important;
+}
+
+.shifan-container .msg-box {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.msg-box .title-msg {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.msg-box .msg {
+  font-size: 18px;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 0;
+  width: 80vw;
+}

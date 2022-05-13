@@ -1,0 +1,67 @@
+<view class="shifan-container">
+  <van-calendar
+    class="calendar"
+    color="#409EFF"
+    type="{{calType}}"
+    poppable="{{false}}"
+    show-title="{{false}}"
+    show-confirm="{{false}}"
+    max-date="{{calMaxDay}}"
+    default-date="{{defaultDate}}"
+    bind:confirm="selectDate"
+    formatter="{{dateFilter}}"
+  />
+
+  <van-cell-group class="check-container">
+    <van-cell class="check-box" title="选择日期区间" size="large">
+      <van-switch checked="{{ isRange }}" bind:change="changeCalType" />
+    </van-cell>
+  </van-cell-group>
+  <view class="msg-box">
+    <text class="title-msg">温馨提示：</text>
+    <text class="msg">
+      1、勾选✔只选择工作日：自动过滤周末；\n
+      2、勾选✔选择日期区间：可以多日勾饭。\n
+    </text>
+  </view>
+
+  <van-action-sheet 
+    show="{{ actionShow }}" 
+    title="客官，请勾饭"
+    bind:close="closeAction">
+    <view class="action-container">
+      <view class="action-box">
+        <van-cell>
+          <van-checkbox 
+            value="{{ isBreakfast }}" 
+            icon-size="25px"
+            bind:change="changeBreakfast">
+            早餐
+          </van-checkbox>
+        </van-cell>
+        <van-cell>
+          <van-checkbox 
+            value="{{ isLunch }}" 
+            icon-size="25px"
+            bind:change="changeLunch">
+            午餐
+          </van-checkbox>
+        </van-cell>
+        <van-cell>
+          <van-checkbox 
+            value="{{ isDinner }}" 
+            icon-size="25px"
+            bind:change="changeDinner">
+            晚餐
+          </van-checkbox>
+        </van-cell>
+      </view>
+      <van-button
+         plain type="info"
+         bind:click="submit"
+         custom-style="margin-top: 30px">
+         提交
+      </van-button>
+    </view>
+  </van-action-sheet>
+</view>

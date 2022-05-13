@@ -1,0 +1,16 @@
+.userInfo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: .5px solid #ccc;
+  background-color: #fff;
+}
+
+.userInfo .avatar {
+  margin-right: 20px;
+  width: 120rpx;
+  height: 120rpx;
+  border: 8rpx solid #34B2BE;
+  border-radius: 50%;
+  overflow: hidden;
+}

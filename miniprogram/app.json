@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/uploadInfo/uploadInfo",
+    "pages/my/my",
+    "pages/shifan/shifan"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "拾饭",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#409EFF",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/shifan/shifan",
+      "iconPath": "images/shifan.png",
+      "selectedIconPath": "images/shifan-active.png",
+      "text": "拾饭"
+    }, {
+      "pagePath": "pages/my/my",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my-active.png",
+      "text": "我的"
+    }]
+  }
+}
